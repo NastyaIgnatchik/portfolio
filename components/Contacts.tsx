@@ -32,7 +32,7 @@ const Contacts = () => {
       logo: <FaTelegramPlane className="mb-2.5 mx-auto text-xl" />,
       title: "Telegram",
       link: "@nastya.igntchk",
-      linkForRedirect: "https://t.me/nastya.igntchk",
+      linkForRedirect: "https://t.me/igntchk_n",
     },
   ];
 
