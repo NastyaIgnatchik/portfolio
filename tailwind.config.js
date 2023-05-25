@@ -17,7 +17,7 @@ module.exports = {
     },
 
     backgroundImage: {
-      "body-texture": "url('../public/image/pageImage/bg-image.png')",
+      "body-texture": "url('../public/bg-image.png')",
     },
   },
 
