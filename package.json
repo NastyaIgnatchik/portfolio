@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "autoprefix": "^1.0.1",
+    "autoprefixer": "^10.4.14",
+    "emailjs-com": "^3.2.0",
+    "next": "^13.4.2",
+    "path": "^0.12.7",
+    "postcss": "^8.4.23",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-use-downloader": "^1.2.4",
+    "swiper": "^9.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.4",
+    "@types/react": "^18.2.6",
+    "tailwindcss": "^3.3.2",
+    "typescript": "^5.0.4"
+  }
+}

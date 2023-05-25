@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply m-0 p-0 list-none decoration-0  box-border;
+  }
+  body {
+    color: theme("colors.color-white");
+    background-color: theme("colors.color-bg");
+    background-image: theme("backgroundImage.body-texture");
+    @apply leading-loose;
+  }
+  html {
+    @apply scroll-smooth;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  a {
+    @apply text-color-primary hover:text-color-white;
+  }
+  small {
+    @apply text-color-light text-[0.7rem];
+  }
+  p {
+    @apply break-all;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-medium;
+  }
+}
+
+@layer components {
+  .btn {
+    color: theme("colors.color-primary");
+    border-color: theme("colors.color-primary");
+    @apply inline-block transition-all ease-in duration-300 w-max px-[0.75rem] py-1.5 rounded-[0.4rem] cursor-pointer border-2 border-solid transition
+   hover:bg-color-white hover:text-color-bg;
+  }
+  .btn-primary {
+    @apply bg-color-primary text-color-bg;
+  }
+  .gradient {
+    background: linear-gradient(theme("colors.color-primary"), transparent);
+  }
+  .navigationLink {
+    @apply p-1 text-2xl text-color-light rounded-full hover:bg-[rgba(0,0,0,0.3)];
+  }
+  .navigationActiveLink {
+    @apply bg-color-primary text-color-bg;
+  }
+  .gradientAbout {
+    background: linear-gradient(
+      45deg,
+      transparent,
+      theme("colors.color-primary"),
+      transparent
+    );
+  }
+  .aboutCards {
+    @apply bg-color-bg-variant rounded-2xl border-2 border-solid py-2 min-h-[150px]  flex flex-col justify-center items-center border-[transparent]
+        hover:bg-[transparent] hover:border-color-primary-variant duration-200 cursor-default;
+  }
+  .aboutIcons {
+    @apply text-color-primary text-2xl m-1;
+  }
+  .experienceCard {
+    @apply bg-color-bg-variant p-5 flex-col flex rounded-2xl border-2 border-solid border-[transparent] hover:bg-[transparent]
+        hover:border-color-primary-variant cursor-default duration-200;
+  }
+  .inputsAndTextarea {
+    @apply p-4 rounded-md bg-[transparent] border-2 border-solid border-color-primary-variant resize-none text-color-white;
+  }
+  .mainScale {
+    @apply lg:w-[70%] w-[80%] sm:w-[70%] md:w-[80%];
+  }
+  .footerLinks {
+    @apply bg-color-bg text-color-white p-3 rounded-xl flex border-2 border-solid border-[transparent] hover:bg-[transparent] hover:text-color-bg hover:border-color-bg;
+  }
+}
