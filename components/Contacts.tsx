@@ -114,7 +114,7 @@ const Contacts = () => {
           <textarea
             className=" inputsAndTextarea"
             name="message"
-            rows="7"
+            rows={7}
             placeholder="Your Message"
             required
           ></textarea>
